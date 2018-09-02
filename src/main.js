@@ -14,7 +14,7 @@ Vue.use(VueApollo)
 
 const apolloProvider = new VueApollo({
   defaultClient: apolloClient
-})
+})​
 
 new Vue({
   el: '#app',

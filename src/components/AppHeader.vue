@@ -1,21 +1,19 @@
 <template>
-  <div id="app">
-    <app-header />
-    <main>
-      <router-view/>
-    </main>
-  </div>
+  <header>
+    <h1>GraphCMS Starter blog</h1>
+    <nav>
+      <router-link exact to="/" class="link">Home</router-link>
+      <router-link to="/about" class="link">About</router-link>
+    </nav>
+  </header>
 </template>
 ​
 <script>
-  import AppHeader from './components/AppHeader.vue'
-  ​
   export default {
-    name: 'app',
-    components: { AppHeader }
+    name: 'AppHeader'
   }
 </script>
-​
+
 <style>
   #app {
     font-family: 'Source Sans Pro', sans-serif;
@@ -38,4 +36,4 @@
     margin: 0 auto;
     max-width: 650px;
   }
-
+</style>
